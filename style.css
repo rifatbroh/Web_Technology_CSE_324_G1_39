@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "TASA Orbiter", sans-serif;
+}
+
+nav {
+    background: #037865;
+    height: 10vh;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 10%;
+}
+
+.nav-item ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;         
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+.text h1 {
+    color: white;
+    cursor: pointer;
+}
+
+.nav-item a:hover {
+    color: orange;
+}
+
+.bttn {
+    padding: 10px 18px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.bttn:hover {
+    color: white;
+    background-color: #193b3d;
+    border: 2px orange solid;
+}
+
+.hero {
+    height: 90vh;
+    width: 100%;
+    background-color: #037865;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.hero-img img {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 5px orange solid;
+}
+
+.hero-content {
+    font-size: 32px;
+    color: #193b3d;
+}
+
+
+footer {
+    height: 10vh;
+    width: 100%;
+    background-color: #037865;
+    text-align: center;
+    font-size: medium;
+    color: white;
+    padding-top: 3%;
+}
+
+
+.about {
+    width: 100vw;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about h1 {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+.about-tabs {
+    display: flex;
+    justify-content: center;  
+    gap: 15px;      
+    margin-top: 10px;
+
+}
+
+.about-tabs input[type="radio"] {
+    display: none;
+}
+
+.about-tabs label {
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    margin-top: 25px;
+    background: orange;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #037865;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.about-tabs label:hover {
+    background: #037865;
+    color: white;
+}
+
+
+.about-tabs input[type="radio"]:checked + label {
+    background: #193b3d;
+    color: white;
+}
+
+.tab-content {
+    margin-top: 25px;
+    width: 650px;
+    height: 300px;
+    text-align: center;
+}
+
+.tab-content .tab-pane {
+    display: none;
+    padding: 20px;
+    height: 250px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    font-size: 18px;
+    color: #193b3d;
+}
+
+/* Show selected tab */
+#tab1:checked ~ .tab-content #content1,
+#tab2:checked ~ .tab-content #content2,
+#tab3:checked ~ .tab-content #content3 {
+    display: block;
+}
+
+.about {
+    height: 90vh;
+}
+
+
+.skill {
+    height: 80vh;
+}
+.skill h2 {
+    font-size: 46px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.skill-box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    max-width: 800px;
+    padding: 20px;
+    border: 2px dashed #037865;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.bx-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.bx-1 img {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+
+.bx-1 p {
+    font-size: 16px;
+    font-weight: 600;
+    color: #037865;
+    margin: 0;
+}
+
+
+.info {
+    height: 80vh;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.info h1 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #037865;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, 
+form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+}
+
+
+form button {
+    padding: 15px;
+    background-color: #037865;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #025d52;
+}
+
+.rifat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;     
+    background-color: #f4f7f8;
+    padding: 20px;
+} 
