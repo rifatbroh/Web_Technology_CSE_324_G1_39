@@ -1,0 +1,105 @@
+/* Basic Reset and Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+}
+
+.card-container {
+    padding: 20px;
+}
+
+.club-card {
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.club-card:hover {
+    box-shadow: 0 10px 30px rgba(128, 128, 128, 0.6); 
+    transform: translateY(-5px);
+}
+
+.card-image-box {
+    width: 100%;
+    height: 180px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+.card-image {
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    object-fit: contain;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-title {
+    color: #14631b; 
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.card-description {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+.card-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+}
+
+.btn {
+    flex-grow: 1; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-transform: uppercase;
+    font-size: 0.85em;
+}
+
+.btn-join {
+    background-color: black;
+    color: white;
+}
+
+.btn-join:hover {
+    background-color: #0056b3;
+    transform: scale(1.02);
+}
+
+.btn-view {
+    background-color: #e9ecef;
+    color: #343a40; 
+    border: 1px solid #ced4da;
+}
+
+.btn-view:hover {
+    background-color: #d3d9df;
+    transform: scale(1.02);
+}
